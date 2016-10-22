@@ -1,3 +1,9 @@
+# [Rock and roll all night and part of every day with KSS Node](http://drupalcampatlanta.com/2016/sessions/rock-and-roll-all-night-and-part-every-day-kss-node)
+
+Demo for Drupal Camp Atlanta talk on KSS Node 2016.
+
+[Slides (pdf)](https://goo.gl/UoVbqd)
+
 ## Getting Started
 If you haven't yet, install nvm:
 https://github.com/creationix/nvm
@@ -17,7 +23,7 @@ _This command will look at your `.nvmrc` file and use the version node.js specif
 
 _This command looks at `package.json` and installs all the npm dependencies specified in it.  Some of the dependencies include gulp, autoprefixer, gulp-sass and others._
 
-#### Runs default task
+#### Runs default task (in this case all available tasks)
 `npm run build`
 
 _This will run whatever the default task is._
@@ -37,7 +43,7 @@ _This is ideal when you are doing a lot of Sass changes and you want to make sur
 
 _This will perform a one-time deletion of all compiled files within the dist/ directory._
 
-#### Cleans complied directory
+#### Compiles style guide.
 `npm run styleguide`
 
-_This will perform generate a style guide using KSS within the dist/ directory._
+_This will generate a style guide using KSS within the dist/ directory._

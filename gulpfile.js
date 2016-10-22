@@ -114,7 +114,7 @@ gulp.task('watch', function() {
   // Watch all my twig files and rebuild the style guide if a file changes.
   gulp.watch(
     './src/{layout,components}/**/*.twig',
-    ['watch:styleguide']
+    ['styleguide']
   );
 });
 
