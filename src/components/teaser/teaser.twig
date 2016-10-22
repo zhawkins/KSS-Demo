@@ -1,0 +1,19 @@
+{{ attach_library('tacocat/teaser') }}
+<article class="teaser {{ modifier_class }}">
+  {% if img %}
+    <div class="teaser__img">
+      <a class="teaser__img-link" href="{{ url }}">{{ img }}</a>
+    </div>
+  {% endif %}
+  <div class="teaser__content">
+    <h2 class="teaser__heading">
+      <a class="teaser__link" href="{{ url }}">{{ title }}</a>
+    </h2>
+    {% if desc %}
+      <p class="teaser__desc">{{ desc|striptags }}</p>
+    {% endif %}
+    {% if btn_text %}
+      <a href="{{ url }}" class="btn btn--primary">{{ btn_text }}</a>
+    {% endif %}
+  </div>
+</article>

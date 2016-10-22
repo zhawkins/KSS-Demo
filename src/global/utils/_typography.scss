@@ -1,0 +1,29 @@
+// Type
+//
+// Custom fonts are loaded by Google Fonts.
+//
+// Markup:
+// <h3>Base</h3>
+// <pre>@include font-stack-base;</pre>
+// <div style="font: 20px/2 'Roboto'"> Roboto </div>
+// <div style="font: bold 20px/2 'Roboto'"> Roboto Bold</div>
+// <h3 style="margin-top: 2rem">Heading</h3>
+// <pre>@include font-stack-heading;</pre>
+// <div style="font: 400 30px/2 'Abhaya Libre'"> Abhaya Libre 400</div>
+// <div style="font: 500 30px/2 'Abhaya Libre'"> Abhaya Libre 500</div>
+// <div style="font: 700 30px/2 'Abhaya Libre'"> Abhaya Libre 700</div>
+//
+// Weight: 999
+//
+// Style guide: Type
+
+@mixin font-stack-base {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+@mixin font-stack-heading {
+  font-family: 'Abhaya Libre', 'Georgia', serif;
+}
+
+$font-weight-bold: bold;
+$font-italic: italic;

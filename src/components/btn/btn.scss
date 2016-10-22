@@ -1,0 +1,71 @@
+// Buttons
+//
+// This is the button component. It provides basic styles for buttons throughout the site.
+//
+// .btn--primary - Primary button style.
+// .btn--secondary - Secondary button style.
+// .btn--large - Modifier to make any button larger.
+//
+// Markup: btn-kss.twig
+//
+// Style guide: Components.btn
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  background-color: $color-alto;
+  font-weight: bold;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  vertical-align: middle;
+  border: 1px solid darken($color-alto, 10%);
+  border-radius: 0;
+  padding: 0.85em 1em;
+  font-size: 1rem;
+
+  &:hover,
+  &:active {
+    background-color: $color-gallery;
+  }
+}
+
+.btn--primary {
+  padding: 0.55em 1.2em;
+  color: $color-pacific-blue;
+  background-color: $color-white;
+  border: 3px solid $color-pacific-blue;
+  border-radius: 3px;
+
+  &:hover,
+  &:active {
+    color: $color-white;
+    text-decoration: none;
+    background-color: darken($color-pacific-blue, 10%);
+  }
+}
+
+.btn--secondary {
+  padding: 0.55em 1.2em;
+  color: $color-pacific-blue;
+  background-color: $color-white;
+  border: 3px solid $color-alto;
+  border-radius: 3px;
+  transition: border-color 0.25s ease;
+
+  &:hover,
+  &:active {
+    color: $color-pacific-blue;
+    background-color: $color-white;
+    text-decoration: none;
+    border-color: $color-silver;
+  }
+}
+
+.btn--large {
+  padding: 0.75em 1.8em;
+  font-size: 1.2rem;
+}

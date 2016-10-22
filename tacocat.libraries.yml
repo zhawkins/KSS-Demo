@@ -1,0 +1,33 @@
+# These lines define the tacocat/global library.
+global:
+  css:
+    # The SMACSS category, "base", is loaded before other categories. Drupal 8
+    # loads stylesheets based on the SMACSS ordering of:
+    # base, layout, component, state, theme
+    base:
+      dist/css/global.css: {}
+
+
+# External library.
+webfonts:
+  version: 1.x
+  css:
+    base:
+      https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500,700|Roboto: { external: true }
+
+btn:
+  css:
+    component:
+      dist/css/btn.css: {}
+
+teaser:
+  css:
+    component:
+      dist/css/teaser.css: {}
+  dependencies:
+    - tacocat/btn
+
+l-center:
+  css:
+    layout:
+      dist/css/l-center.css: {}

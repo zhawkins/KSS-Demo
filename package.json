@@ -1,0 +1,21 @@
+{
+  "name": "tacocat",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gulp",
+    "compile": "gulp compile",
+    "styleguide": "gulp styleguide",
+    "clean": "gulp clean",
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "kss": "https://registry.npmjs.org/kss/-/kss-3.0.0-beta.15.tgz",
+    "run-sequence": "^1.2.1"
+  }
+}

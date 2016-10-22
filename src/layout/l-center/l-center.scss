@@ -1,0 +1,19 @@
+// Center
+//
+// Center a container and set a max width of 1200px
+// which is the widest the page should ever be.
+//
+// Markup:
+// <section class="l-center">
+//  Centered content with a max width of 1200px.
+// </section>
+//
+// Style guide: Layout.center
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.l-center {
+  max-width: 1200px;
+  margin: 0 auto;
+}

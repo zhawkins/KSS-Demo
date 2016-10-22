@@ -1,0 +1,70 @@
+// Teaser
+//
+// The teaser component promotes a piece of content
+// and provides a call to action.
+//
+// Markup: teaser.twig
+//
+// Style guide: Components.teaser
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.teaser {
+  max-width: 704px;
+  color: $color-white;
+  background-color: $color-pacific-blue;
+}
+
+.teaser__img {
+
+  img {
+    display: block;
+  }
+}
+
+.teaser__link {
+  color: $color-white;
+
+  &:hover,
+  &:active {
+    color: inherit;
+  }
+}
+
+.teaser__img-link {
+  display: block;
+  position: relative;
+  height: 0;
+  width: 100%;
+  /* 16x9 aspect ratio. */
+  padding-top: 56.25%;
+  background-color: $color-silver;
+
+  /* Force the img to fill it's container. */
+  img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.teaser__content {
+  padding: 2rem 2rem 2.25rem;
+}
+
+.teaser__heading {
+  @include font-stack-heading;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+.teaser__desc {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  font-size: 1rem;
+}

@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ */
+#}
+{%
+  include '@tacocat/teaser/teaser.twig' with {
+    url: url,
+    modifier_class: '',
+    title: label,
+    desc: content.body.0['#text'],
+    img: content.field_image,
+    btn_text: content.field_call_to_action.0['#context'].value
+  } only
+%}
